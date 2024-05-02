@@ -21,7 +21,7 @@ header .navbar {
 }
 
 header {
-    font-size: 30px;
+    font-size: 27px;
 }
 
 header .container-fluid {
@@ -78,25 +78,41 @@ header a img{
     text-shadow: darkred 0 0 5px;
 }
 
+.biolibro {
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(54, 2, 2, 0.8);
+    border-radius: 10px;
+    margin: 20px; 
+    margin-top: 40px;
+}
+
 .tipo {
     display: flex;
     justify-content: space-evenly;
     padding: 25px;
 }
 
-.digital {
+.categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 450px;
     width: 30%;
     border: 3px solid white;
     border-radius: 3px;
     text-align: center;
-    background-color: darkred;
-    position: relative; /* Añade una posición relativa */
+    background-color: rgba(160, 0, 0, 0.363);
+    position: relative;
 }
 
 .img-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 
@@ -109,35 +125,172 @@ header a img{
     width: 225px;
     transition: all 0.3s;
     filter: grayscale(100%);
-    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .img-digital:hover {
     transform: scale(1.09);
     filter: grayscale(0%);
 }
-
-.titulo-digital {
-    font-size: 30px;
-    color: whitesmoke;
-    padding-top: 10px;
+.img-fisica {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-image: url(/assets/ICONO\ LIBRO\ REAL.webp);
+    background-size: cover;
+    height: 200px;
+    width: 225px;
+    transition: all 0.3s;
+    filter: grayscale(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.desc-digital {
-    padding: 10px;
+
+.img-fisica:hover {
+    transform: scale(1.09);
+    filter: grayscale(0%);
+}
+
+.titulo-libros {
+    font-size: 30px;
+    color: whitesmoke;
+    padding-top: 15px;
+}
+
+.desc-libros {
+    padding: 5px;
     font-size: 20px;
     color: aliceblue;
 }
 
-.redes-digital {
-    position: absolute; /* Añade una posición absoluta */
-    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
-    left: 50%; /* Alinea al centro horizontalmente */
-    transform: translateX(-50%); /* Centra el contenido horizontalmente */
+.call-div {
+    margin-bottom: 50px;
 }
 
-.redes-digital a {
-    color: orange;
+#call {
+    font-size: 25px;
+}
+
+#call a {
     text-decoration: none;
-    font-size: 27px;
+}
+
+footer {
+    background-color: #0f0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+footer i {
+    display: inline-block;
+    margin-left: 10px !important;
+    font-size: 23px;
+    padding: 5px;
+    color: red;
+    vertical-align: middle;
+    /* margin-right: 10px !important; */
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav .nav-link {
+        border: none;
+        margin: 5px;
+        text-align: center;
+        margin-left: 23px;
+    }
+
+    header .container-fluid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .biolibro {
+        font-size: 20px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+        padding: 15px; /* Menos relleno */
+        margin: 10px; /* Menos margen externo */
+        margin-top: 30px;
+    }
+
+    .tipo {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .categorias {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+    
+      .img-container {
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+    
+      .titulo-libros {
+        font-size: 24px;
+        padding-top: 10px;
+      }
+    
+      .desc-libros {
+        font-size: 16px;
+        padding: 5px;
+      }
+    
+      .call-div {
+        margin-bottom: 20px;
+      }
+    
+      #logo {
+        margin-bottom: 10px;
+        margin-top: 30px;
+      }
+      .img-container:hover .img-digital,
+    .img-container:hover .img-fisica {
+        transform: scale(1);
+        filter: grayscale(0%);
+    }
+    footer i {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 980px) {
+    .categorias {
+      width: 45%;
+    }
+  
+    .titulo-libros {
+      font-size: 24px; 
+    }
+  
+    .desc-libros {
+      font-size: 16px;
+    }
+  
+    .img-digital,
+    .img-fisica {
+      height: 150px;
+      width: 170px;
+    }
+  }
+
+  @media (hover: none) {
+    .img-digital,
+    .img-fisica {
+        filter: grayscale(0%) !important;
+    }
 }
