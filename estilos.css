@@ -1,7 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(/assets/LIBROS\ FONDO.jpg);
+    /* background-size: contain; */
+}
+
+header .navbar {
+    border-top: none !important;
+    border-bottom: none !important;
+    background-image: url(/assets/LIBROS\ FONDO.jpg);
 }
 
 header {
@@ -19,7 +35,7 @@ header .container-fluid {
 header h1 {
 color: whitesmoke;
 font-size: 50px;
-margin-left: 80px;
+margin-left: 15px;
 }
 
 .navbar-nav {
@@ -34,6 +50,7 @@ margin-left: 80px;
     margin: 0 5px;
     padding: 10px 15px;
     transition: 0.3s;
+    text-shadow: darkred 3px 1px 5px;
 }
 
 .navbar-nav .nav-link:hover {
@@ -45,4 +62,82 @@ header a img{
     width: 100px;
     height: auto;
     padding-left: 15px;
+}
+
+.sub {
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 5px;
+    font-size: 40px;
+    vertical-align: middle;
+    border: rgb(165, 42, 42) solid 7px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: darkred 0 0 5px;
+}
+
+.tipo {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.digital {
+    height: 450px;
+    width: 30%;
+    border: 3px solid white;
+    border-radius: 3px;
+    text-align: center;
+    background-color: darkred;
+    position: relative; /* Añade una posición relativa */
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img-digital {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-image: url(/assets/ICONO\ LIBRO\ DIGITAL);
+    background-size: cover;
+    height: 200px;
+    width: 225px;
+    transition: all 0.3s;
+    filter: grayscale(100%);
+    background-position: center;
+}
+
+.img-digital:hover {
+    transform: scale(1.09);
+    filter: grayscale(0%);
+}
+
+.titulo-digital {
+    font-size: 30px;
+    color: whitesmoke;
+    padding-top: 10px;
+}
+
+.desc-digital {
+    padding: 10px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.redes-digital {
+    position: absolute; /* Añade una posición absoluta */
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    left: 50%; /* Alinea al centro horizontalmente */
+    transform: translateX(-50%); /* Centra el contenido horizontalmente */
+}
+
+.redes-digital a {
+    color: orange;
+    text-decoration: none;
+    font-size: 27px;
 }
