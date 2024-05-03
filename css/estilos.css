@@ -330,4 +330,23 @@ footer i {
     }
   }
 
-  
+  /* inicio librofisico.index */
+  /* Estilos para las 8 portadas */
+
+.portada {
+    width: 350px;
+    height: 500px;
+    border: 7px solid rgba(255, 0, 0, 0.822);
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+
+  .portada:hover {
+    transform: scale(1.09);
+    filter: grayscale(0%);
+}
