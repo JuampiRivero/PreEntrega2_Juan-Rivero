@@ -34,7 +34,7 @@ header .container-fluid {
 
 header h1 {
 color: whitesmoke;
-font-size: 50px;
+font-size: 52px;
 margin-left: 15px;
 }
 
@@ -69,7 +69,7 @@ header a img{
     margin-left: 25px;
     margin-right: 25px;
     margin-top: 5px;
-    font-size: 40px;
+    font-size: 45px;
     vertical-align: middle;
     border: rgb(165, 42, 42) solid 7px;
     border-radius: 15px;
@@ -184,6 +184,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+    font-size: 35px;
 }
 
 footer p {
@@ -195,7 +196,7 @@ footer p {
 footer i {
     display: inline-block;
     margin-left: 10px !important;
-    font-size: 23px;
+    font-size: 45px;
     padding: 5px;
     color: red;
     vertical-align: middle;
@@ -294,3 +295,39 @@ footer i {
         filter: grayscale(0%) !important;
     }
 }
+
+/* INICIO librosdigitales.html */
+.galeria {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item {
+    width: 300px;
+    height: 450px;
+    border: 7px solid rgba(255, 0, 0, 0.822);
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+
+  .item:hover {
+        transform: scale(1.09);
+        filter: grayscale(0%);
+    }
+
+  @media only screen and (max-width: 999px) {
+    .galeria {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  
