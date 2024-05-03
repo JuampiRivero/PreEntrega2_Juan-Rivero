@@ -16,7 +16,7 @@ body {
 header .navbar {
     border-top: none !important;
     border-bottom: none !important;
-    background-image: url(/assets/LIBROS\ FONDO.jpg);
+    background-image: url(../assets/LIBROS\ FONDO.jpg);
 }
 
 header {
@@ -118,7 +118,7 @@ header a img{
 .img-digital {
     margin-top: 10px;
     margin-bottom: 5px;
-    background-image: url(/assets/ICONO\ LIBRO\ DIGITAL);
+    background-image: url(../assets/ICONO\ LIBRO\ DIGITAL);
     background-size: cover;
     height: 200px;
     width: 225px;
@@ -137,7 +137,7 @@ header a img{
 .img-fisica {
     margin-top: 10px;
     margin-bottom: 5px;
-    background-image: url(/assets/ICONO\ LIBRO\ REAL.webp);
+    background-image: url(../assets/ICONO\ LIBRO\ REAL.webp);
     background-size: cover;
     height: 200px;
     width: 225px;
